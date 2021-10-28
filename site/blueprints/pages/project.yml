@@ -6,14 +6,37 @@ columns:
       info:
         type: fields
         fields:
-          category:
-            type: text
           text:
+            label: Project Description
             type: textarea
+            help: See our content styleguide
+            required: true
+          category:
+            type: select
+            options:
+              - Analog
+              - Digital
+              - Screen Printing
+            width: 1/2
           year:
+            before: Finished
             type: number
+            min: 2015
+            width: 1/2
           client:
+            after: Universität
             type: text
+            width: 1/2
+            icon: user
+            maxlength: 50
+          link:
+            label: Link To Project
+            type: url
+            width: 1/2
+            icon: url
+          tags:
+            type: tags
+            icon: tag
   - width: 1/2
     sections:
       gallery:
