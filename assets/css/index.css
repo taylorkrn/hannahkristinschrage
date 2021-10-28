@@ -1,0 +1,66 @@
+body {
+    margin: 30px;
+    font-family: 'Syne', sans-serif;
+}
+
+.main {
+
+}
+
+#header {
+
+}
+
+.footer {
+    position: fixed;
+    bottom: 10px;
+
+}
+
+.menu {
+    display: inline-flex;
+    float: right;
+    position: fixed;
+    top: 0;
+    right: 20px;
+}
+
+.menu ul{
+    list-style: none;
+}
+
+.menu li{
+    display: inline-block;
+    padding: 14px 16px;
+    color: #1c8aff;
+    font-size: 16px;
+}
+
+.menu a{
+    color: #1c8aff;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.logo {
+    display: inline-block;
+}
+
+.projects{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    list-style: none;
+    grid-column-gap: 1.5em;
+    grid-row-gap:  3em;
+
+}
+
+.projects img {
+    width: 100%;
+    margin-bottom: 0.5em;
+}
+
+.projects img:hover {
+    transform: scale(1.2);
+    cursor: wait;
+}
