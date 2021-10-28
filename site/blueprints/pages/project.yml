@@ -40,7 +40,14 @@ columns:
   - width: 1/2
     sections:
       gallery:
+        headline: Project Gallery
+        size: tiny
+        info: "{{ file.alt }} {{ file.dimensions }}"
         type: files
+        min: 3
+        max: 10
         layout: cards
+        # Now Every Uploaded Image gets the gallery-image template
+        template: gallery-image
         image:
           ratio: 1/1

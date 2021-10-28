@@ -1,0 +1,18 @@
+title: File
+
+accept: image/*
+
+fields:
+  alt:
+    label: Heading
+    type: text
+    width: 1/2
+  caption:
+    type: text
+    width: 1/2
+  photographer:
+    type: text
+    width: 1/2
+  license:
+    type: text
+    width: 1/2
