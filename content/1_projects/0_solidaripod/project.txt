@@ -10,4 +10,16 @@ Year: 2020
 
 ----
 
+Featured: true
+
+----
+
 Client: 
+
+----
+
+Link: 
+
+----
+
+Tags: 

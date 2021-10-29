@@ -23,6 +23,10 @@ columns:
             type: number
             min: 2015
             width: 1/2
+          featured:
+            type: toggle
+            help: If featured, a project will appear on the homepage
+            width: 1/2
           client:
             after: Universität
             type: text

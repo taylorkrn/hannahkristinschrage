@@ -58,11 +58,12 @@ body {
 .projects img {
     width: 100%;
     margin-bottom: 0.5em;
+    transition: all 0.3s;
 }
 
 .projects img:hover {
-    transform: scale(1.2);
-    cursor: wait;
+    transform: scale(1.1);
+    cursor: url('./pencil.cur'), auto;
 }
 
 .pagination {
@@ -72,4 +73,29 @@ body {
 
 .pagination span{
     color:  #999;
+}
+
+.sideNav {
+    width: 0;
+    height: 100%;
+    position: sticky;
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 70px;
+    transition: 1s;
+}
+
+.sideNav .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  font-size: 30px;
+  margin-left: 50px;
+}
+
+#mainProjects {
+    transition: margin-left .5s;
+    padding: 20px;
 }

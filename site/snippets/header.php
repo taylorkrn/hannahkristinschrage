@@ -7,6 +7,7 @@
 
     <?= css('assets/css/index.css') ?>
     <?= css('@auto') ?>
+
 </head>
 <body>
 

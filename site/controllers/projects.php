@@ -3,12 +3,12 @@
 return function($page, $site) {
 
     $filterBy = get('filter');
-    $unfiltered = $page->children()->listed();
+    $unfiltered = collection('projects');
     $projects = $unfiltered
-    ->when($filterBy, function($filterBy) {
-        return $this->filterBy('category', $filterBy);
-    })
-    ->paginate(3);
+        ->when($filterBy, function($filterBy) {
+            return $this->filterBy('category', $filterBy);
+        })
+        ->paginate(3);
 
 
     $pagination = $projects->pagination();
