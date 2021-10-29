@@ -64,3 +64,12 @@ body {
     transform: scale(1.2);
     cursor: wait;
 }
+
+.pagination {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pagination span{
+    color:  #999;
+}
