@@ -84,11 +84,11 @@ a {
 }
 
 .container {
-    display: flex;
+/*     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 10px; */
+    margin-left: 30px;
 }
-
 
 figcaption {
     font-family: 'Syne', sans-serif;
@@ -96,4 +96,9 @@ figcaption {
     font-size: 16px;
     text-decoration: none !important;
     background-image: none !important;
+}
+
+.myGrid {
+    display: grid;
+    grid-template-columns: 40% 60%;
 }

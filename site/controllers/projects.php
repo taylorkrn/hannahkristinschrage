@@ -7,8 +7,7 @@ return function($page, $site) {
     $projects = $unfiltered
         ->when($filterBy, function($filterBy) {
             return $this->filterBy('category', $filterBy);
-        })
-        ->paginate(3);
+        });
 
 
     $pagination = $projects->pagination();

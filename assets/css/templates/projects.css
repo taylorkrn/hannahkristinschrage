@@ -32,6 +32,7 @@
 #mainProjects {
     display: inline-block;
     transition: margin-left 0.7s;
+    margin-top: 150px;
 }
 
 

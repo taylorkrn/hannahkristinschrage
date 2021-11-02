@@ -23,8 +23,9 @@
 
 
 .project-gallery {
-    width: 600px;
-    padding: 100px;
+    width: 900px;
+    padding-left: 100px;
+    padding-right: 100px;
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
@@ -58,7 +59,8 @@
 
 .project-gallery li {
     display: inline;
-    padding: 50px;
+    padding: 20px;
+    padding-top: 0px;
 }
 
 /* .project-gallery ul{

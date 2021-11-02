@@ -1,25 +1,6 @@
 <?php snippet('header') ?>
 
-<!-- PHP Moved to Controllers <?php
-
-$filterBy = get('filter');
-
-$unfiltered = $page->children()->listed();
-
-$projects = $unfiltered
-    ->when($filterBy, function($filterBy) {
-        return $this->filterBy('category', $filterBy);
-    })
-    ->paginate(3);
-
-
-$pagination = $projects->pagination();
-
-$filters = $unfiltered->pluck('category', null, true);
-
-?> -->
-
-    <main>
+    <main  style='display: flex'>
         <div class="sideNav" id="mySidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="<?= $page->url() ?>" >All</a><br>
@@ -31,9 +12,7 @@ $filters = $unfiltered->pluck('category', null, true);
 
         <div id='mainProjects'>
 
-            <?php snippet('projects', [
-                'projects' => collection('projects')
-            ]) ?>
+            <?php snippet('projects') ?>
 
         </div>
     </main>
@@ -50,12 +29,12 @@ mainProjects.addEventListener('mousemove', (e) => {
 /* Set the width of the side navigation to 150px */
 function openNav() {
   document.getElementById("mySidenav").style.width = "150px";
-  mainProjects.style.marginLeft = "150px";
+  // mainProjects.style.marginLeft = "170px";
 }
 
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
-  mainProjects.style.marginLeft = "0px";
+  // mainProjects.style.marginLeft = "20px";
 }
 
 </script>

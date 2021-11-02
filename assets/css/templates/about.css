@@ -5,3 +5,8 @@
 .aboutGallery ul{
     list-style: none;
 }
+
+.aboutText {
+    line-height:  1.5em;
+    line-break: loose;
+}

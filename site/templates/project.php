@@ -6,7 +6,7 @@
                 <ul>
                     <?php foreach ($page->images() as $image): ?>
                         <li>
-                            <img src="<?= $image->resize(null, 500)->url() ?>" alt="<?= $image->alt() ?>">
+                            <img src="<?= $image->resize(null, 600)->url() ?>" alt="<?= $image->alt() ?>">
                         </li>
                     <?php endforeach?>
                 </ul>
