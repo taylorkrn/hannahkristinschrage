@@ -1,0 +1,37 @@
+title: Project
+
+columns:
+  - width: 1/2
+    sections:
+      info:
+        type: fields
+        fields:
+          text:
+            label: Diary Entry
+            type: textarea
+            help: See our content styleguide
+            required: true
+          date:
+            before: Published
+            type: date
+            width: 1/2
+          link:
+            before: Instagram
+            type: url
+            width: 1/2
+          tags:
+            type: tags
+            icon: tag
+  - width: 1/2
+    sections:
+      gallery:
+        headline: Project Gallery
+        info: "{{ file.alt }} {{ file.dimensions }}"
+        type: files
+        min: 1
+        max: 10
+        layout: cards
+        # Now Every Uploaded Image gets the gallery-image template
+        template: gallery-image
+        image:
+          ratio: 1/1

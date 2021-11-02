@@ -1,0 +1,24 @@
+title: Drawing Blog
+
+sections:
+  drafts:
+    headline: Draft Blogs
+    type: pages
+    template: diary
+    # text: "{{ page.title }}" (This is what automatically happens)
+    info: "{{ page.date }}"
+    status: drafts # published, listed, unlisted, drafts
+    help: Always upload a nice cover photo before publishing
+    image:
+      ratio: 4/5
+      cover: true
+  published:
+    headline: Published Blogs
+    type: pages
+    layout: cards
+    template: diary
+    info: "{{ page.date }}"
+    status: published
+    image:
+      ratio: 4/5
+      cover: true

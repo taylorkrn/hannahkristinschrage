@@ -18,22 +18,23 @@ $pagination = $projects->pagination();
 $filters = $unfiltered->pluck('category', null, true);
 
 ?> -->
+    <main>
+        <div class="sideNav" id="mySidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="<?= $page->url() ?>" >All</a><br>
+            <?php foreach ($filters as $filter): ?>
+                <a href="<?= $page->url() ?>?filter=<?= $filter?>" ><?= $filter?></a><br>
+            <?php endforeach ?>
+        </div>
 
-    <div class="sideNav" id="mySidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="<?= $page->url() ?>" >All</a><br>
-        <?php foreach ($filters as $filter): ?>
-            <a href="<?= $page->url() ?>?filter=<?= $filter?>" ><?= $filter?></a><br>
-        <?php endforeach ?>
-    </div>
 
+        <div id="mainProjects">
 
-    <main class="main" id="mainProjects">
+            <?php snippet('projects') ?>
 
-        <?php snippet('projects') ?>
+            <!-- Pagination Snippet <?php snippet('pagination') ?> -->
 
-        <!-- Pagination Snippet <?php snippet('pagination') ?> -->
-
+        </div>
     </main>
 
 <script type="text/javascript">

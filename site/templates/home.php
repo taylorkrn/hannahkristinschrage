@@ -1,6 +1,6 @@
 <?php snippet('header') ?>
 
-    <main class="main">
+    <main style='margin-top: 180px'>
 
         <?php snippet('projects', [
             'projects' => collection('featuredProjects')

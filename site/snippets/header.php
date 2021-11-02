@@ -11,7 +11,7 @@
 </head>
 <body>
 
-    <header id="header" class="">
+    <header id="header">
         <a class='logo' href="<?= $site->url() ?>"><?= $site->image()->resize(180,120) ?></a>
 
         <nav class='menu'>

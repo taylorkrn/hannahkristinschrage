@@ -6,9 +6,9 @@
 
                     <!-- Image source would be <?php $project->files()->filterBy('type', 'image')->first()->url() ?> -->
 
-                    <?= $project->image()->resize(400) ?>
+                    <?= $project->image()->crop(500,500) ?>
                     <figcaption>
-                        <?= $project->title() ?>
+                        <?= $project->title() ?><br>
                         <small><?= $project->category() ?></small>
                     </figcaption>
                 </figure>
