@@ -11,7 +11,7 @@
                             <p><?= $diary->title() ?></p>
                         </div>
                         <a href='<?= $diary->url() ?>'>
-                            <img src="<?= $diary->image()->crop(500,500)->url() ?>">
+                            <img src="<?= $diary->image()->crop(500)->url() ?>">
                         </a>
                     </div>
                 </li>

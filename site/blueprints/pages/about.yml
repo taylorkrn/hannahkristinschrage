@@ -9,62 +9,12 @@ sections:
         type: textarea
         help: Here is where you describe yourself
         required: true
-      experience1:
-        label: Experience (1)
-        type: text
-        width: 1/3
-      institution1:
-        label: Institution (1)
-        type: text
-        width: 1/3
-      date1:
-        label: Date (1)
-        type: number
-        min: 2010
-        max: 2021
-        width: 1/3
-      experience2:
-        label: Experience (2)
-        type: text
-        width: 1/3
-      institution2:
-        label: Institution (2)
-        type: text
-        width: 1/3
-      date2:
-        label: Date (2)
-        type: number
-        min: 2010
-        max: 2021
-        width: 1/3
-      experience3:
-        label: Experience (3)
-        type: text
-        width: 1/3
-      institution3:
-        label: Institution (3)
-        type: text
-        width: 1/3
-      date3:
-        label: Date (3)
-        type: number
-        min: 2010
-        max: 2021
-        width: 1/3
-      experience4:
-        label: Experience (4)
-        type: text
-        width: 1/3
-      institution4:
-        label: Institution (4)
-        type: text
-        width: 1/3
-      date4:
-        label: Date (4)
-        type: number
-        min: 2010
-        max: 2021
-        width: 1/3
+  experience:
+    headline: Experience
+    type: pages
+    template: experience
+    info: "{{ page.position }} {{ page.institute }}"
+
   gallery:
     headline: Gallery
     size: tiny

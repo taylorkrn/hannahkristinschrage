@@ -17,6 +17,7 @@ columns:
               - Analog
               - Digital
               - Screen Printing
+              - Graphic Design
             width: 1/2
           year:
             before: Finished
@@ -48,7 +49,7 @@ columns:
         size: tiny
         info: "{{ file.alt }} {{ file.dimensions }}"
         type: files
-        min: 3
+        min: 1
         max: 10
         layout: cards
         # Now Every Uploaded Image gets the gallery-image template

@@ -3,29 +3,13 @@
     <main class="main">
         <p><?= $page->text() ?></p>
 
-        <div>
-            <h2><?= $page->experience1() ?></h2>
-            <p><?= $page->institution1() ?></p>
-            <p><?= $page->date1() ?></p>
-        </div>
-
-        <div>
-            <h2><?= $page->experience2() ?></h2>
-            <p><?= $page->institution2() ?></p>
-            <p><?= $page->date2() ?></p>
-        </div>
-
-        <div>
-            <h2><?= $page->experience3() ?></h2>
-            <p><?= $page->institution3() ?></p>
-            <p><?= $page->date3() ?></p>
-        </div>
-
-        <div>
-            <h2><?= $page->experience4() ?></h2>
-            <p><?= $page->institution4() ?></p>
-            <p><?= $page->date4() ?></p>
-        </div>
+        <?php  foreach ($page->children()->listed() as $experience): ?>
+            <div class="container">
+                <h2><?= $experience->position() ?></h2>
+                <p><?= $experience->institute() ?></p>
+                <p><?= $experience->start() ?>-<?= $experience->finish() ?></p>
+            </div>
+        <?php endforeach ?>
 
         <div class='aboutGallery'>
             <ul>

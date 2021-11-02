@@ -1,0 +1,7 @@
+.aboutGallery {
+    display: flex;
+}
+
+.aboutGallery ul{
+    list-style: none;
+}

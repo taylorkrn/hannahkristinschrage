@@ -1,0 +1,43 @@
+.sideNav {
+    display: inline-block;
+    width: 0px;
+    height: 100%;
+    position: sticky;
+    z-index: 1; /* Stay on top */
+    top: 150px; /* Stay at the top */
+    left: 0px;
+    padding-left: 20px;
+    overflow-x: hidden;
+    transition: 0.7s;
+    padding-top: 50px;
+    margin: 0px;
+    flex-wrap: nowrap
+}
+
+.sideNav a {
+    display: block;
+    color: #1c8aff;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.sideNav .closebtn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 25px;
+  margin-left: 50px;
+}
+
+#mainProjects {
+    display: inline-block;
+    transition: margin-left 0.7s;
+}
+
+figcaption {
+    font-family: 'Syne', sans-serif;
+    color: #999999;
+    font-size: 16px;
+    text-decoration: none !important;
+    background-image: none !important;
+}

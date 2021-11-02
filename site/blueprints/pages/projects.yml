@@ -10,7 +10,7 @@ sections:
     status: drafts # published, listed, unlisted, drafts
     help: Always upload a nice cover photo before publishing
     image:
-      ratio: 4/5
+      ratio: 1/1
       cover: true
   published:
     headline: Published Projects
@@ -20,5 +20,5 @@ sections:
     info: "{{ page.category }}"
     status: published
     image:
-      ratio: 4/5
+      ratio: 1/1
       cover: true
