@@ -83,11 +83,12 @@ a {
     cursor: url('./pencil.cur'), auto;
 }
 
-.container {
-/*     display: flex;
+.centerContainer {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 10px; */
-    margin-left: 30px;
+/*     justify-content: center; */
+    gap: 10px;
 }
 
 figcaption {

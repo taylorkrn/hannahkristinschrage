@@ -9,4 +9,5 @@
 .aboutText {
     line-height:  1.5em;
     line-break: loose;
+    max-width: 750px;
 }
