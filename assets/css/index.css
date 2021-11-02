@@ -70,7 +70,6 @@ a {
     list-style: none;
     grid-column-gap: 1.5em;
     grid-row-gap:  3em;
-
 }
 
 .projects img {
@@ -88,4 +87,13 @@ a {
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+
+figcaption {
+    font-family: 'Syne', sans-serif;
+    color: #999999;
+    font-size: 16px;
+    text-decoration: none !important;
+    background-image: none !important;
 }

@@ -18,6 +18,7 @@ $pagination = $projects->pagination();
 $filters = $unfiltered->pluck('category', null, true);
 
 ?> -->
+
     <main>
         <div class="sideNav" id="mySidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -28,11 +29,11 @@ $filters = $unfiltered->pluck('category', null, true);
         </div>
 
 
-        <div id="mainProjects">
+        <div id='mainProjects'>
 
-            <?php snippet('projects') ?>
-
-            <!-- Pagination Snippet <?php snippet('pagination') ?> -->
+            <?php snippet('projects', [
+                'projects' => collection('projects')
+            ]) ?>
 
         </div>
     </main>

@@ -6,7 +6,7 @@
                 <ul>
                     <?php foreach ($page->images() as $image): ?>
                         <li>
-                            <img src="<?= $image->resize(500)->url() ?>" alt="<?= $image->alt() ?>">
+                            <img src="<?= $image->resize(null, 500)->url() ?>" alt="<?= $image->alt() ?>">
                         </li>
                     <?php endforeach?>
                 </ul>
@@ -32,6 +32,11 @@
                         <?php if ($page->year()->isNotEmpty()): ?>
                             <dt>Year</dt>
                             <dd><?= $page->year() ?></dd>
+                        <?php endif ?>
+
+                        <?php if ($page->link()->isNotEmpty()): ?>
+                            <dt>Link</dt>
+                            <dd><?= $page->link() ?></dd>
                         <?php endif ?>
                     </dl>
                 </div>

@@ -34,10 +34,4 @@
     transition: margin-left 0.7s;
 }
 
-figcaption {
-    font-family: 'Syne', sans-serif;
-    color: #999999;
-    font-size: 16px;
-    text-decoration: none !important;
-    background-image: none !important;
-}
+

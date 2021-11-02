@@ -3,17 +3,14 @@
     <main class="main">
         <ul class='blogs'>
             <?php foreach ($page->children()->listed() as $diary): ?>
+                <li class='container'>
+                    <h3><?= $diary->date() ?></h3>
+                    <p><?= $diary->title() ?></p>
+                </li>
                 <li>
-
-                    <div class='container'>
-                        <div>
-                            <h3><?= $diary->date() ?></h3>
-                            <p><?= $diary->title() ?></p>
-                        </div>
-                        <a href='<?= $diary->url() ?>'>
-                            <img src="<?= $diary->image()->crop(500)->url() ?>">
-                        </a>
-                    </div>
+                    <a href='<?= $diary->url() ?>'>
+                        <img src="<?= $diary->image()->crop(500)->url() ?>">
+                    </a>
                 </li>
             <?php endforeach ?>
         </ul>
