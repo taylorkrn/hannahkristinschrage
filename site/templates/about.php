@@ -7,11 +7,9 @@
         <div class='myGrid'>
             <div>
                 <?php  foreach ($page->children()->listed() as $experience): ?>
-                    <h3><?= $experience->position() ?></h2>
-                    <div class="container">
-                        <p><?= $experience->institute() ?></p>
-                        <p><em><?= $experience->start() ?> - <?= $experience->finish() ?></em></p>
-                    </div>
+                    <p><strong><?= $experience->position() ?></strong><br>
+                    <?= $experience->institute() ?><br>
+                    <em><?= $experience->start() ?> - <?= $experience->finish() ?></em></p><br>
                 <?php endforeach ?>
             </div>
             <div class='aboutGallery'>

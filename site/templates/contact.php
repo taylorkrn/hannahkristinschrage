@@ -1,13 +1,10 @@
 <?php snippet('header') ?>
 
     <main class="main">
-        <h3><?= $page->text() ?></h3><br>
-        <h3>Email:</h3>
-        <p style='margin-left: 30px'><?= $page->email() ?></p>
-        <h3>Phone Number:</h3>
-        <p style='margin-left: 30px'><?= $page->phone() ?></p>
-        <h3>Address:</h3>
-        <p style='margin-left: 30px'><?= $page->address() ?></p>
+        <p><strong><?= $page->text() ?></strong></p><br>
+        <p><strong>Email </strong><a style='color: inherit' href="mailto:hallo@hannahkristinschrage.de"><?= $page->email() ?></p></a>
+<!--         <p><strong>Phone Number </strong><?= $page->phone() ?></p>
+        <p><strong>Address </strong><?= $page->address() ?></p> -->
     </main>
 
 <?php snippet('footer') ?>

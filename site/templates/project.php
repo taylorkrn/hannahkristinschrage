@@ -10,25 +10,24 @@
                 <?php endforeach?>
             </ul>
         </div>
-        <div class='centerContainer'>
-            <h4><?= $page->title() ?></h4>
+        <div class='infoText'>
+            <p><strong><?= $page->title() ?></strong>
             <?php if ($page->category()->isNotEmpty()): ?>
                 <?= $page->category() ?>
             <?php endif ?>
-        </div>
-        <div class='infoText'>
-            <?= $page->text() ?>
+            </p>
+            <p><?= $page->text() ?></p><br>
             <?php if ($page->client()->isNotEmpty()): ?>
-                <p><strong>Client: </strong><?= $page->client() ?></p>
+                <p><strong>Client </strong><?= $page->client() ?></p>
             <?php endif ?>
             <?php if ($page->category()->isNotEmpty()): ?>
-                <p><strong>Category: </strong><?= $page->category() ?></p>
+                <p><strong>Category </strong><?= $page->category() ?></p>
             <?php endif ?>
             <?php if ($page->year()->isNotEmpty()): ?>
-                <p><strong>Year: </strong><?= $page->year() ?></p>
+                <p><strong>Year </strong><?= $page->year() ?></p>
             <?php endif ?>
             <?php if ($page->link()->isNotEmpty()): ?>
-                <p><strong>Link: </strong><?= $page->link() ?></p>
+                <p><strong>Link </strong><?= $page->link() ?></p>
             <?php endif ?>
         </div>
 
