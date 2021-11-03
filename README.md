@@ -1,34 +1,21 @@
-<img src="http://getkirby.com/assets/images/github/plainkit.jpg" width="300">
+![](https://github.com/taylorkrn/hannahkristinschrage/blob/main/screenshot1.png)
 
 
-**Kirby: the CMS that adapts to any project, loved by developers and editors alike.**  
-The Plainkit is a minimal Kirby setup with the basics you need to start a project from scratch. It is the ideal choice if you are already familiar with Kirby and want to start step-by-step.
+# A Website for the Illustrator hannahkristinschrage
 
-You can learn more about Kirby at [getkirby.com](https://getkirby.com).
+## A Website using Kirby CMS, PHP and Javascript
 
-### Try Kirby for free  
-You can try Kirby and the Plainkit on your local machine or on a test server as long as you need to make sure it is the right tool for your next project. … and when you’re convinced, [buy your license](https://getkirby.com/buy).
+The Website includes a:
 
-### Get going
-Read our guide on [how to get started with Kirby](https://getkirby.com/docs/guide/quickstart).
+- Complete Kirby Content Management System
+- Homepage/Projects Page with ability to filter Projects through their Category
+- Project Page with grab and move gallery
+- About and Contact Pages
 
-You can [download the latest version](https://github.com/getkirby/plainkit/archive/main.zip) of the Plainkit.  
-If you are familiar with Git, you can clone Kirby's Plainkit repository from Github.
+This project introduced me to using a content management system (Kirby) and PHP.
 
-    git clone https://github.com/getkirby/plainkit.git
+![](https://github.com/taylorkrn/hannahkristinschrage/blob/main/screenshot2.png)
 
-## What's Kirby?
-- **[getkirby.com](https://getkirby.com)** – Get to know the CMS.
-- **[Try it](https://getkirby.com/try)** – Take a test ride with our online demo. Or download one of our kits to get started.
-- **[Documentation](https://getkirby.com/docs/guide)** – Read the official guide, reference and cookbook recipes.
-- **[Issues](https://github.com/getkirby/kirby/issues)** – Report bugs and other problems.
-- **[Feedback](https://feedback.getkirby.com)** – You have an idea for Kirby? Share it.
-- **[Forum](https://forum.getkirby.com)** – Whenever you get stuck, don't hesitate to reach out for questions and support.
-- **[Discord](https://chat.getkirby.com)** – Hang out and meet the community.
-- **[Twitter](https://twitter.com/getkirby)** – Spread the word.
-- **[Instagram](https://www.instagram.com/getkirby/)** – Share your creations: #madewithkirby.
+![](https://github.com/taylorkrn/hannahkristinschrage/blob/main/screenshot3.png)
 
----
-
-© 2009-2020 Bastian Allgeier (Bastian Allgeier GmbH)  
-[getkirby.com](https://getkirby.com) · [License agreement](https://getkirby.com/license)
+![](https://github.com/taylorkrn/hannahkristinschrage/blob/main/screenshot4.png)
