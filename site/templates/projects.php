@@ -36,6 +36,20 @@ function closeNav() {
   // mainProjects.style.marginLeft = "20px";
 }
 
+const sideNav = document.querySelector(".sideNav");
+
+window.addEventListener('scroll', () => {
+    if (document.documentElement.clientWidth > 800) {
+        sideNav.style.top = "150px"
+        return
+    };
+    if (document.documentElement.scrollTop > 200 || document.body.scrollTop > 200) {
+        sideNav.style.top = "0";
+    } else {
+        sideNav.style.top = `${200 - document.documentElement.scrollTop}px`
+    }
+})
+
 </script>
 
 <?php snippet('footer') ?>
