@@ -9,7 +9,6 @@
             <?php endforeach ?>
         </div>
 
-
         <div id='mainProjects'>
 
             <?php snippet('projects') ?>

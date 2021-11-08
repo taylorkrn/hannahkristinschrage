@@ -5,7 +5,7 @@
 
 
         <div class='myGrid'>
-            <div>
+            <div class='experience'>
                 <?php  foreach ($page->children()->listed() as $experience): ?>
                     <p><strong><?= $experience->position() ?></strong><br>
                     <?= $experience->institute() ?><br>

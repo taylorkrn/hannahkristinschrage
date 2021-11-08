@@ -1,13 +1,57 @@
 .aboutGallery {
     display: flex;
+    overflow-x: hidden;
 }
 
 .aboutGallery ul{
     list-style: none;
+    padding-inline-start: 0px;
 }
 
 .aboutText {
     line-height:  1.5em;
     line-break: loose;
     max-width: 750px;
+    margin-left: 0px;
+}
+
+.myGrid {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    order: 1;
+    margin-left: 0px;
+}
+
+.experience {
+    order: 0;
+}
+
+@media screen and (max-width: 1000px) {
+    .myGrid {
+        grid-template-columns: 100%;
+    }
+
+    .aboutGallery {
+        order: 0;
+    }
+
+    .experience {
+        order: 1;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .experience {
+        margin-left: 30px;
+    }
+
+    .aboutText {
+        margin-left: 30px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .aboutGallery {
+        transform: scale(0.7);
+    }
 }

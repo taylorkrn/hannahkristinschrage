@@ -48,11 +48,12 @@
 .project-gallery ul {
     display: inline;
     list-style: none;
+    padding-inline-start: 0;
 }
 
 .project-gallery li {
     display: inline;
-    padding: 20px;
+    padding-right: 40px;
     padding-top: 0px;
 }
 
@@ -101,3 +102,38 @@
     width: 100%;
 }
  */
+
+
+@media screen and (max-width: 1200px) {
+    .project-gallery img {
+        height: 450px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .logo {
+        position: absolute;
+    }
+
+    .projectMain {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    .project-gallery img {
+        height: 400px;
+    }
+
+    .projectMain {
+        margin-top: 200px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .project-gallery img {
+        height: 300px;
+    }
+}

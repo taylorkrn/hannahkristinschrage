@@ -2,6 +2,7 @@
     display: inline-block;
     width: 0px;
     height: 100%;
+    position: -webkit-sticky;
     position: sticky;
     z-index: 1; /* Stay on top */
     top: 150px; /* Stay at the top */
@@ -35,4 +36,8 @@
     margin-top: 150px;
 }
 
-
+@media screen and (max-width: 800px) {
+    .sideNav {
+        top: 200px;
+    }
+}
