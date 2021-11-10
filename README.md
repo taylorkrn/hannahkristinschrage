@@ -1,9 +1,9 @@
 ![](https://github.com/taylorkrn/hannahkristinschrage/blob/main/screenshot1.png)
 
 
-# A Website for the Illustrator hannahkristinschrage
+# hannahkristinschrage.de
 
-## A Website using Kirby CMS, PHP and Javascript
+## A Website for the Illustrator hannahkristinschrage (Kirby CMS, PHP & JS)
 
 The Website includes a:
 
@@ -17,5 +17,3 @@ This project introduced me to using a content management system (Kirby) and PHP.
 ![](https://github.com/taylorkrn/hannahkristinschrage/blob/main/screenshot2.png)
 
 ![](https://github.com/taylorkrn/hannahkristinschrage/blob/main/screenshot3.png)
-
-![](https://github.com/taylorkrn/hannahkristinschrage/blob/main/screenshot4.png)
